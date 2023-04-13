@@ -5,19 +5,20 @@
 //  Created by Renas Ali on 10/04/2023.
 //
 
+
+
 import SwiftUI
 
-struct LocationRequestView: View {
-   
+struct LoadingView: View {
     var body: some View {
-       
-      Text("")
-        }
+        ProgressView()
+            .progressViewStyle(CircularProgressViewStyle(tint: .white))
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
+}
 
-
-struct LocationRequestView_Previews: PreviewProvider {
+struct LoadingView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationRequestView()
+        LoadingView()
     }
 }
