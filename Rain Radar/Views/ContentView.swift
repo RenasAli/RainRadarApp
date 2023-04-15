@@ -5,38 +5,51 @@
 //  Created by Renas Ali on 10/04/2023.
 //
 
-import SwiftUI
+/*import SwiftUI
 import CoreLocation
 
 
 struct ContentView: View {
     
     @StateObject var locationManager = LocationManager()
-   @State private var weather: WeatherManager.CurrentWeatherRespons?
-    @StateObject var weatherManager = WeatherManager()
+    @State private var weather: ResponseBody?
+    @State private var hourlyweather: HourlyForecastResponse?
+    var weatherManager = WeatherManager()
+    var hourlyWeatherManager = HourlyWeatherManager()
     
     var body: some View {
-        VStack{
-           
-                let location = locationManager.userLocation
-            Text("Hello")
-                .task(
-                    weather = try weatherManager.getCurrentWheather(latitude: location?.coordinate.latitude, longitude: location?.coordinate.longitude))
-            if let weather = weatherManager.currentWeather{
-                Text("\(weather.name)")
+        
+        VStack {
+            if let location = locationManager.location {
+                if let weather = weather {
+                    weatherView(weather: weather )
+                    HourlyWeatherView()
+                } else {
+                    LoadingView()
+                        .task() {
+                            do {
+                                weather = try await weatherManager.getCurrentWeather(latitude: location.latitude, longitude: location.longitude)
+                                
+                                hourlyweather = try await
+                                hourlyWeatherManager.getHourluWeather(latitude: location.latitude, longitude: location.longitude)
+                            } catch {
+                                print("Error getting CurrentWeather: \(error)")
+                            }
+                        }
+                }
+            } else {
+                if locationManager.isLoading {
+                    LoadingView()
+                } else {
+                    WelcomeView()
+                        .environmentObject(locationManager)
+                }
             }
-            
-            
-            
         }
-    }
+        
+    }}
     
+*/
     
-    
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
-    }
-}
+   
+

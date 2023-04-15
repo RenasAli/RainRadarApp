@@ -9,7 +9,7 @@ import Foundation
 import CoreLocation
 
 class LocationManager: NSObject, ObservableObject {
-    
+    @Published var city = ""
     @Published var currentLocation: CLLocation?
     private let locationManager = CLLocationManager()
     
@@ -29,20 +29,23 @@ extension LocationManager: CLLocationManagerDelegate {
         
         guard let location = locations.last, currentLocation == nil else { return }
         
-        DispatchQueue.main.async {
-            self.currentLocation = location
+        let geocoder = CLGeocoder()
+        geocoder.reverseGeocodeLocation(location) { placemarks, error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let placemark = placemarks?.first else { return }
+            
+            if let city = placemark.locality {
+                self.city = city
+            }
+            
+            DispatchQueue.main.async {
+                self.currentLocation = location
+            }
         }
     }
+    
 }
-
-    
-    
-    
-    
-    
-    
-        
-    
-    
-
-

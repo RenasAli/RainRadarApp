@@ -10,7 +10,7 @@ import SwiftUI
 
 struct Goal: View {
     @State private var selection = 0
-    
+    @State private var isPresented = false
     var body: some View {
         ZStack {
             Color.gray.opacity(0.1)
@@ -76,11 +76,12 @@ struct Goal: View {
                     .offset(x: 30, y: 24)
                 }
                 .padding(.horizontal, 10)
-            
-                    Spacer()
-                   
+                
+                Spacer()
+               
                     Button(action: {
-                        GoalFormView()
+                        self.isPresented = true
+
                     }, label: {
                         Text("+ Add new")
                             .foregroundColor(.white)
@@ -90,54 +91,15 @@ struct Goal: View {
                             .cornerRadius(20)
                             .frame(maxWidth: .infinity)
                             .padding(.top, 435)
-                    })
-                
+                             
+                    }).sheet(isPresented: $isPresented) {
+                        GoalFormView()}
                 Spacer()
-                
-                ZStack {
-                    Rectangle()
-                        .foregroundColor(Color.white)
-                        .ignoresSafeArea()
-                        .padding(.top, 18)
-                    HStack {
-                        Button(action: {
-                            // Action to be performed when button is tapped
-                        }, label: {
-                            Image(systemName: "calendar")
-                                .foregroundColor(.black)
-                                .font(.system(size: 30))
-                        })
-                        
-                        Spacer()
-                        
-                        Button(action: {
-                            // Action to be performed when button is tapped
-                        }, label: {
-                            Image(systemName: "flame")
-                                .foregroundColor(.black)
-                                .font(.system(size: 30))
-                        })
-                        
-                        Spacer()
-                        
-                        Button(action: {
-                            // Action to be performed when button is tapped
-                        }, label: {
-                            Image(systemName: "cloud")
-                                .foregroundColor(.black)
-                                .font(.system(size: 30))
-                        })
-                    }
-                    .padding(.top, 20)
-                    .padding(.horizontal, 30)
-                }
-                
-                
                 
             }
         }
-        }
     }
+}
 
 
 struct Goal_Previews: PreviewProvider {

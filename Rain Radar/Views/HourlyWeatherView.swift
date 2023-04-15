@@ -13,7 +13,7 @@ struct HourlyWeatherView: View {
    let hourlyWeather: [HourWeather]
     var body: some View {
         VStack(alignment: .leading){
-            ScrollView(.horizontal) {
+            
                 VStack {
                     Text("Hourly Weather")
                         .font(.caption).opacity(0.5)
@@ -33,7 +33,7 @@ struct HourlyWeatherView: View {
                                 
                             }
                         }
-                    }
+                    
                 }
             }
         }

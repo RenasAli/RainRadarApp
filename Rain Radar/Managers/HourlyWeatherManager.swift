@@ -4,7 +4,7 @@
 //
 //  Created by Renas Ali on 12/04/2023.
 //
-import CoreLocation
+/*import CoreLocation
 import Foundation
 
 class HourlyWeatherManager {
@@ -69,4 +69,4 @@ struct Weather: Codable {
         return icon
     }
 }
-
+*/

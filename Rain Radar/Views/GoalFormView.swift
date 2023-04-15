@@ -185,43 +185,6 @@ struct GoalFormView: View {
                    })
                    
                    Spacer()
-                   ZStack {
-                       Rectangle()
-                           .foregroundColor(Color.white)
-                           .ignoresSafeArea()
-                           .padding(.top, 18)
-                       HStack {
-                           Button(action: {
-                               // Action to be performed when button is tapped
-                           }, label: {
-                               Image(systemName: "calendar")
-                                   .foregroundColor(.black)
-                                   .font(.system(size: 30))
-                           })
-                           
-                           Spacer()
-                           
-                           Button(action: {
-                               // Action to be performed when button is tapped
-                           }, label: {
-                               Image(systemName: "flame")
-                                   .foregroundColor(.black)
-                                   .font(.system(size: 30))
-                           })
-                           
-                           Spacer()
-                           
-                           Button(action: {
-                               // Action to be performed when button is tapped
-                           }, label: {
-                               Image(systemName: "cloud")
-                                   .foregroundColor(.black)
-                                   .font(.system(size: 30))
-                           })
-                       }
-                       .padding(.top, 20)
-                       .padding(.horizontal, 30)
-                   }
                    
                    
                    

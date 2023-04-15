@@ -19,7 +19,7 @@ struct DailyWheatherView: View {
                     
                     List(dailyWeather, id: \.date) { dailyWeather in
                         HStack {
-                            Text(dailyWeather.date.formatted(date: .omitted, time: .omitted))
+                            Text(dailyWeather.date.formatted(date: .abbreviated, time: .omitted))
                                 .frame(maxWidth: 50, alignment: .leading)
                             
                             Image(systemName: "\(dailyWeather.symbolName)")

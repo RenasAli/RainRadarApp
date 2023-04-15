@@ -10,12 +10,14 @@
 		06A4807B29E7964D009276D1 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A4807A29E7964D009276D1 /* ContentView2.swift */; };
 		06A8D2FB29E7CAC3009A0B94 /* DailyWheatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A8D2FA29E7CAC3009A0B94 /* DailyWheatherView.swift */; };
 		06A8D2FD29E7D128009A0B94 /* RainRadarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A8D2FC29E7D128009A0B94 /* RainRadarManager.swift */; };
+		06A8D2FF29E7EBDD009A0B94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A8D2FE29E7EBDD009A0B94 /* Assets.xcassets */; };
+		06A8D30229EA2BF2009A0B94 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A8D30129EA2BF2009A0B94 /* TabView.swift */; };
+		06A8D30429EA3341009A0B94 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A8D30329EA3340009A0B94 /* Calendar.swift */; };
 		06D379B929E74B6F0075E72D /* HourlyWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D379B829E74B6E0075E72D /* HourlyWeatherManager.swift */; };
 		06D379BD29E763AB0075E72D /* HourlyWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D379BC29E763AB0075E72D /* HourlyWeatherView.swift */; };
 		06D379C129E782BC0075E72D /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D379C029E782BC0075E72D /* GoalView.swift */; };
 		06D379C329E7835F0075E72D /* GoalFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D379C229E7835F0075E72D /* GoalFormView.swift */; };
 		06D3BF9129E4577800B209F4 /* Rain_RadarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D3BF9029E4577800B209F4 /* Rain_RadarApp.swift */; };
-		06D3BF9529E4577B00B209F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D3BF9429E4577B00B209F4 /* Assets.xcassets */; };
 		06D3BF9829E4577B00B209F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D3BF9729E4577B00B209F4 /* Preview Assets.xcassets */; };
 		06D3BFA229E4577B00B209F4 /* Rain_RadarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D3BFA129E4577B00B209F4 /* Rain_RadarTests.swift */; };
 		06D3BFAC29E4577B00B209F4 /* Rain_RadarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D3BFAB29E4577B00B209F4 /* Rain_RadarUITests.swift */; };
@@ -49,6 +51,10 @@
 		06A4807A29E7964D009276D1 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		06A8D2FA29E7CAC3009A0B94 /* DailyWheatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWheatherView.swift; sourceTree = "<group>"; };
 		06A8D2FC29E7D128009A0B94 /* RainRadarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainRadarManager.swift; sourceTree = "<group>"; };
+		06A8D2FE29E7EBDD009A0B94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Desktop/Assets.xcassets; sourceTree = "<group>"; };
+		06A8D30029E7EBED009A0B94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06A8D30129EA2BF2009A0B94 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		06A8D30329EA3340009A0B94 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		06B0EC8729E7B66500F00034 /* Rain Radar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Rain Radar.entitlements"; sourceTree = "<group>"; };
 		06D379B829E74B6E0075E72D /* HourlyWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherManager.swift; sourceTree = "<group>"; };
 		06D379BC29E763AB0075E72D /* HourlyWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherView.swift; sourceTree = "<group>"; };
@@ -56,7 +62,6 @@
 		06D379C229E7835F0075E72D /* GoalFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalFormView.swift; sourceTree = "<group>"; };
 		06D3BF8D29E4577800B209F4 /* Rain Radar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rain Radar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D3BF9029E4577800B209F4 /* Rain_RadarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rain_RadarApp.swift; sourceTree = "<group>"; };
-		06D3BF9429E4577B00B209F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06D3BF9729E4577B00B209F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		06D3BF9D29E4577B00B209F4 /* Rain RadarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rain RadarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D3BFA129E4577B00B209F4 /* Rain_RadarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rain_RadarTests.swift; sourceTree = "<group>"; };
@@ -119,12 +124,13 @@
 		06D3BF8F29E4577800B209F4 /* Rain Radar */ = {
 			isa = PBXGroup;
 			children = (
+				06A8D2FE29E7EBDD009A0B94 /* Assets.xcassets */,
 				06B0EC8729E7B66500F00034 /* Rain Radar.entitlements */,
 				06D3BFBD29E4736400B209F4 /* Views */,
 				06D3BFBA29E45D6200B209F4 /* Managers */,
 				06D3BF9029E4577800B209F4 /* Rain_RadarApp.swift */,
 				06D3BFC429E5B4B400B209F4 /* Double.swift */,
-				06D3BF9429E4577B00B209F4 /* Assets.xcassets */,
+				06A8D30029E7EBED009A0B94 /* Assets.xcassets */,
 				06D3BF9629E4577B00B209F4 /* Preview Content */,
 			);
 			path = "Rain Radar";
@@ -177,6 +183,8 @@
 				06D379C229E7835F0075E72D /* GoalFormView.swift */,
 				06A4807A29E7964D009276D1 /* ContentView2.swift */,
 				06A8D2FA29E7CAC3009A0B94 /* DailyWheatherView.swift */,
+				06A8D30129EA2BF2009A0B94 /* TabView.swift */,
+				06A8D30329EA3340009A0B94 /* Calendar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,8 +294,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				06D3BF9829E4577B00B209F4 /* Preview Assets.xcassets in Resources */,
+				06A8D2FF29E7EBDD009A0B94 /* Assets.xcassets in Resources */,
 				06D3BFCB29E6EC9300B209F4 /* weatherData.json in Resources */,
-				06D3BF9529E4577B00B209F4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +324,8 @@
 				06D379B929E74B6F0075E72D /* HourlyWeatherManager.swift in Sources */,
 				06D3BFC329E58C9300B209F4 /* WeatherManager.swift in Sources */,
 				06A8D2FD29E7D128009A0B94 /* RainRadarManager.swift in Sources */,
+				06A8D30429EA3341009A0B94 /* Calendar.swift in Sources */,
+				06A8D30229EA2BF2009A0B94 /* TabView.swift in Sources */,
 				06D3BF9129E4577800B209F4 /* Rain_RadarApp.swift in Sources */,
 				06D379C329E7835F0075E72D /* GoalFormView.swift in Sources */,
 				06D379BD29E763AB0075E72D /* HourlyWeatherView.swift in Sources */,
